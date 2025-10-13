@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/react-portfolio-template-master/static/css/main.6b268b26.css",
-    "main.js": "/react-portfolio-template-master/static/js/main.fa2b07a9.js",
-    "static/js/453.b05d8aa5.chunk.js": "/react-portfolio-template-master/static/js/453.b05d8aa5.chunk.js",
-    "static/media/bg-light.png": "/react-portfolio-template-master/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/bg-dark.png": "/react-portfolio-template-master/static/media/bg-dark.f420c6b8458af72de935.png",
-    "static/media/project1.jpg": "/react-portfolio-template-master/static/media/project1.3dd863e9d8ecb91e72a3.jpg",
-    "static/media/project4.jpg": "/react-portfolio-template-master/static/media/project4.0e8006d15882d7204492.jpg",
-    "static/media/project3.jpg": "/react-portfolio-template-master/static/media/project3.ea8681923c4b201653d3.jpg",
-    "static/media/project2.jpg": "/react-portfolio-template-master/static/media/project2.8b67e2d76b69b27716d0.jpg",
-    "index.html": "/react-portfolio-template-master/index.html",
-    "main.6b268b26.css.map": "/react-portfolio-template-master/static/css/main.6b268b26.css.map",
-    "main.fa2b07a9.js.map": "/react-portfolio-template-master/static/js/main.fa2b07a9.js.map",
-    "453.b05d8aa5.chunk.js.map": "/react-portfolio-template-master/static/js/453.b05d8aa5.chunk.js.map"
+    "main.css": "/khanh-porfolio/static/css/main.0bdf4f4a.css",
+    "main.js": "/khanh-porfolio/static/js/main.0e7779fb.js",
+    "static/js/453.b05d8aa5.chunk.js": "/khanh-porfolio/static/js/453.b05d8aa5.chunk.js",
+    "static/media/bg-light.png": "/khanh-porfolio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/bg-dark.png": "/khanh-porfolio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/project1.jpg": "/khanh-porfolio/static/media/project1.3dd863e9d8ecb91e72a3.jpg",
+    "static/media/project4.jpg": "/khanh-porfolio/static/media/project4.0e8006d15882d7204492.jpg",
+    "static/media/project3.jpg": "/khanh-porfolio/static/media/project3.ea8681923c4b201653d3.jpg",
+    "static/media/project2.jpg": "/khanh-porfolio/static/media/project2.8b67e2d76b69b27716d0.jpg",
+    "index.html": "/khanh-porfolio/index.html",
+    "main.0bdf4f4a.css.map": "/khanh-porfolio/static/css/main.0bdf4f4a.css.map",
+    "main.0e7779fb.js.map": "/khanh-porfolio/static/js/main.0e7779fb.js.map",
+    "453.b05d8aa5.chunk.js.map": "/khanh-porfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6b268b26.css",
-    "static/js/main.fa2b07a9.js"
+    "static/css/main.0bdf4f4a.css",
+    "static/js/main.0e7779fb.js"
   ]
 }
