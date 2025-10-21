@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/khanh-porfolio/static/css/main.0bdf4f4a.css",
-    "main.js": "/khanh-porfolio/static/js/main.0e7779fb.js",
+    "main.css": "/khanh-porfolio/static/css/main.6f2105df.css",
+    "main.js": "/khanh-porfolio/static/js/main.82ef5f36.js",
     "static/js/453.b05d8aa5.chunk.js": "/khanh-porfolio/static/js/453.b05d8aa5.chunk.js",
     "static/media/bg-light.png": "/khanh-porfolio/static/media/bg-light.bac0efb485244a522981.png",
-    "static/media/bg-dark.png": "/khanh-porfolio/static/media/bg-dark.f420c6b8458af72de935.png",
     "static/media/project1.jpg": "/khanh-porfolio/static/media/project1.3dd863e9d8ecb91e72a3.jpg",
     "static/media/project4.jpg": "/khanh-porfolio/static/media/project4.0e8006d15882d7204492.jpg",
     "static/media/project3.jpg": "/khanh-porfolio/static/media/project3.ea8681923c4b201653d3.jpg",
     "static/media/project2.jpg": "/khanh-porfolio/static/media/project2.8b67e2d76b69b27716d0.jpg",
     "index.html": "/khanh-porfolio/index.html",
-    "main.0bdf4f4a.css.map": "/khanh-porfolio/static/css/main.0bdf4f4a.css.map",
-    "main.0e7779fb.js.map": "/khanh-porfolio/static/js/main.0e7779fb.js.map",
+    "main.6f2105df.css.map": "/khanh-porfolio/static/css/main.6f2105df.css.map",
+    "main.82ef5f36.js.map": "/khanh-porfolio/static/js/main.82ef5f36.js.map",
     "453.b05d8aa5.chunk.js.map": "/khanh-porfolio/static/js/453.b05d8aa5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0bdf4f4a.css",
-    "static/js/main.0e7779fb.js"
+    "static/css/main.6f2105df.css",
+    "static/js/main.82ef5f36.js"
   ]
 }
