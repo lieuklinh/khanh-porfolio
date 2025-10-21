@@ -6,30 +6,29 @@ import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
 const learnerLabels = [
-    "Data Science",
-    "Honors Program",
+    "Excel", 
+    "PowerBI",
     "Python",
+    "Microsoft Azure",
     "SQL",
-    "Self-Taught",
-    "Continuous Growth"
+    "Tableau",
+    "SAS",
+    "R"
 ];
 
 const practicerLabels = [
-    "Power BI",
-    "Machine Learning",
     "Data Visualization",
-    "Process Automation",
+    "Machine Learning",
+    "Data Mining",
+    "Database Design",
     "Predictive Analytics",
-    "Research"
+    "Categorical Data Analysis" 
 ];
 
 const communityLabels = [
-    "Leadership",
-    "Mentorship",
-    "Cross-Cultural",
-    "Social Impact",
-    "Collaboration",
-    "Service"
+    "Project Management",
+    "Stakeholder Engagement",
+    "Cross-Functional Collaboration",
 ];
 
 function Expertise() {
@@ -42,7 +41,7 @@ function Expertise() {
                 <br /><br />
                 A rising senior at the University of North Florida with a background in data visualization,
                  machine learning, and predictive analytics using Python, R, SQL, Power BI, and Tableau.
-                  With internship experience spanning research, utilities, and technology, I specialize in 
+                  With internship experience spanning in research, utilities, and technology, I specialize in 
                   transforming complex ideas into intuitive and impactful solutions.
                 <br /><br />
                 I believe analytics is more than dashboards and charts—it's about solving problems, 
@@ -60,10 +59,10 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faLightbulb} size="3x"/>
                     <h3>Lifelong Learner</h3>
-                    <p>At UNF, I've immersed myself in data analytics coursework and computing projects. I explored research in automation and visualization. 
-                        Beyond school, I'm a self-taught and explorer—constantly learning through books, tools, and platforms.</p>
+                    <p>At UNF, I've immersed myself in data analytics coursework and computing projects. I explored research in automation and visualization helping me 
+                        develop a strong analytical mindset.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Learning focus:</span>
+                        <span className="chip-title">Programming languages:</span>
                         {learnerLabels.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -74,10 +73,10 @@ function Expertise() {
                     <FontAwesomeIcon icon={faHandshake} size="3x"/>
                     <h3>Purposeful Practicer</h3>
                     <p>Through internships at UNF Computing Department and JEA, I've applied data science to real-world 
-                    challenges—building ML models, designing dashboards, and automating workflows. These experiences 
+                    challenges by building ML models, designing dashboards, and automating workflows. These experiences 
                     taught me how to turn data into action, and action into purpose.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Experience:</span>
+                        <span className="chip-title">Experience with:</span>
                         {practicerLabels.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -87,11 +86,9 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faHeart} size="3x"/>
                     <h3>Community-Centered Thinker</h3>
-                    <p>Through AIESEC, I supported youth leadership and internship exchanges across cultures. With 
-                    Hunger Fight, I analyzed food insecurity data and helped pack meals for families in need. 
-                    Grateful for the support I've received, I always look for ways to give back and uplift others.</p>
+                    <p>Through AIESEC, I supported youth leadership and internship exchanges across cultures. Grateful for the support I've received, I always look for ways to give back and uplift others.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Impact areas:</span>
+                        <span className="chip-title">Soft skills:</span>
                         {communityLabels.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
