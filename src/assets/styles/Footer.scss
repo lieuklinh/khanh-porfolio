@@ -1,15 +1,49 @@
-footer {
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+/* ========== NAVBAR: hide the sun icon completely ========== */
+/* Works whether it's an <svg>, a React-Icon, or a toggle button */
+header svg,
+.navbar svg,
+nav svg,
+.header svg,
+.theme-toggle,
+.theme-toggle svg,
+.dark-mode-toggle,
+.dark-mode-toggle svg {
+  display: none !important;
+}
 
-    svg {
-        width: 1.1em !important;
-        height: 1.1em !important;
-        margin-right: 10px;
-    }
+/* In case it was injected as a pseudo-element (emoji) */
+header::before,
+.navbar::before,
+nav::before {
+  content: none !important;
+}
 
-    p {
-        font-size: 0.8em;
-    }
+/* ========== NAVBAR LINKS: make text black ========== */
+nav a,
+.navbar a,
+header a {
+  color: #000 !important;
+}
+
+/* If you have button/links inside the nav */
+nav button,
+.navbar button,
+header button,
+nav span,
+.navbar span,
+header span {
+  color: #000 !important;
+}
+
+/* ========== FOOTER: force text black, hide any svg just in case ========== */
+footer svg { display: none !important; }
+
+footer p,
+footer a,
+footer span,
+footer li,
+footer strong,
+footer em {
+  color: #000 !important;
+  text-decoration: none;
 }

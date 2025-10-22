@@ -1,38 +1,58 @@
+/* ===== GENERAL TEXT STYLES ===== */
 .vertical-timeline span {
     color: white;
     font-family: 'Courier Prime', monospace;
 }
 
-.vertical-timeline p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element p {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h3 {
-    color: rgb(39, 40, 34);
-}
-
-.vertical-timeline-element h4 {
-    color: rgb(39, 40, 34);
-}
-
+.vertical-timeline p,
+.vertical-timeline-element p,
+.vertical-timeline-element h3,
+.vertical-timeline-element h4,
 .vertical-timeline-element span {
     color: rgb(39, 40, 34);
 }
 
+/* ===== HIDE DATE LABEL ===== */
 .vertical-timeline-element .vertical-timeline-element-date {
-    color: white;
+    display: none !important; /* hide external date */
 }
 
+/* ===== ICON COLOR ===== */
 .svg-inline--fa {
     color: white;
 }
 
-@media screen and (max-width: 1170px) {
-    .vertical-timeline-element .vertical-timeline-element-date {
-        color: rgb(39, 40, 34);
-    }
+/* ===== TIMELINE LINE POSITION ===== */
+.vertical-timeline::before {
+    left: 18px !important; /* keep line on the left */
 }
+
+/* ===== ICON POSITION ===== */
+.vertical-timeline-element-icon {
+    left: 0 !important;
+}
+
+/* ===== CONTENT BOX WIDTH ADJUSTMENT ===== */
+/* make the white box same width as Education section */
+.vertical-timeline-element-content {
+    margin-left: 60px !important; /* space for purple icon */
+    width: calc(100% - 60px) !important; /* stretch to full width minus icon space */
+    max-width: 100% !important;
+    background-color: #fff !important; /* white background */
+    border-radius: 10px; /* rounded corners like Education box */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* subtle shadow for consistency */
+    padding: 20px; /* add spacing inside the box */
+}
+
+/* ===== REMOVE ARROW ===== */
+.vertical-timeline-element-content-arrow {
+    display: none !important; /* removes arrow pointer */
+}
+
+/* ===== TIMELINE CONTAINER RESET ===== */
+.vertical-timeline {
+    padding: 0 !important;
+    max-width: none !important;
+}
+
+

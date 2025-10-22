@@ -1,85 +1,160 @@
+/* ====================== */
+/* EDUCATION (unchanged)  */
+/* ====================== */
 .skills-container {
-    padding: 5% 10%;
+    padding: 3% 10%;
     display: flex;
     flex-direction: column;
     text-align: left;
-
-    svg {
-        color: white;
-    }
+    background-color: #B0D0F0;
 }
-  
-.skills-container .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-}
-  
-.skills-container .skills-grid .skill {
-    align-items: center;
-    text-align: left;
-}
-  
-.chip {
-    color: rgb(39, 40, 34) !important;
-    background-color: white !important;
-    font-size: 0.8rem !important;
-    height: 25px !important;
-  
-    span {
-        font-family: 'Courier Prime', monospace;
-        color: rgb(39, 40, 34);
-    }
-  
-    svg {
-        height: 15px !important;
-    }
+.skills-container h1 {
+    font-size: 2em;
+    color: #0d1116;
+    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.flex-chips {
-    line-height: 2;
-    margin: 0.5;
-
-    .chip-title {
-        color: white;
-        padding-right: 10px;
-    }
+/* White box container */
+.education-box {
+    background-color: #FFFFFF;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.education-content .university-name {
+    font-size: 1.5em;
+    color: #0d1116;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 0 10px 0;
+}
+.education-content .degree {
+    font-size: 1.1em;
+    color: #0d1116;
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+    font-weight: normal;
+}
+.education-content .date-range {
+    font-size: 0.95em;
+    color: #C4A747;
+    margin: 0 0 15px 0;
+    font-weight: normal;
+}
+.skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+.skills-list .skill-line {
+    font-size: 1em;
+    color: #0d1116;
+    line-height: 1.6;
+    margin: 0;
+    font-style: italic;
+}
+.skills-list .skill-line em {
+    font-style: italic;
+    font-weight: normal;
+}
+@media screen and (max-width: 768px) {
+    .skills-container { padding: 5%; }
+    .education-box { padding: 20px; }
+    .university-name { font-size: 1.3em !important; }
 }
 
-.flex-chips .MuiChip-root {
-    margin-right: 0.5em;
+/* ====================== */
+/* WORK EXPERIENCE (Responsive, aligned to Education) */
+/* ====================== */
+
+/* ====================== */
+/* WORK EXPERIENCE (Responsive, aligned to Education) */
+/* ====================== */
+
+/* Text colors */
+.vertical-timeline span { color: white; font-family: 'Courier Prime', monospace; }
+.vertical-timeline p,
+.vertical-timeline-element p,
+.vertical-timeline-element h3,
+.vertical-timeline-element h4,
+.vertical-timeline-element span { color: rgb(39, 40, 34); }
+
+/* Hide external date */
+.vertical-timeline-element .vertical-timeline-element-date { display: none !important; }
+
+/* Icon glyph color */
+.svg-inline--fa { color: white; }
+
+/* ---- Vars to keep gutters, line & icon in sync ---- */
+:root{
+  --section-gutter: 10%;   /* match Education desktop padding */
+  --card-left-offset: 60px;/* space before the white card */
+  --line-offset: 18px;     /* distance from gutter to the vertical line */
+  --line-width: 3px;       /* timeline line thickness */
 }
 
-.flex-chips .MuiChip-outlined {
-    background-color: #e0e0e0;
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+/* Timeline container uses same side gutters as Education */
+.vertical-timeline{
+  margin-left: var(--section-gutter) !important;
+  margin-right: var(--section-gutter) !important;
+  padding: 0 !important;
+  max-width: none !important;
 }
 
-.flex-chips .MuiChip-outlined span {
-    color: rgb(39, 40, 34);
+/* Place the vertical line using the same vars (single source of truth) */
+.vertical-timeline::before{
+  left: calc(var(--section-gutter) + var(--line-offset)) !important;
+  width: var(--line-width) !important;
 }
 
-@media screen {
-    @media (max-width: 768px) {
-        .skills-container {
-            display: block;
-            padding-left: 5%;
-            padding-right: 5%;
-        }
-    
-        .skills-container .skills-grid {
-            display: initial;
-        }
-        
-        .skills-container .skills-grid .skill {
-            padding-bottom: 5%;
-        }
-    }
+/* Center the purple icon EXACTLY on the line */
+.vertical-timeline-element-icon{
+  /* put the icon anchor on the line... */
+  left: calc(var(--section-gutter) + var(--line-offset)) !important;
+  /* ...then center the circle regardless of size/border */
+  transform: translateX(-50%) !important;
 
-    @media (max-width: 567px) {
-        .skills {
-            font-size: 12px;
-        }
-    }
+  /* neutralize library defaults that can offset it */
+  margin-left: 0 !important;
+
+  /* keep glyph centered */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50% !important;
+  box-sizing: border-box !important;
+}
+
+/* White card fills remaining width (minus icon/line space) */
+.vertical-timeline-element-content{
+  margin-left: var(--card-left-offset) !important;
+  width: calc(100% - var(--card-left-offset)) !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+
+  background-color: #fff !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,.1);
+  padding: 20px;
+}
+
+/* Remove the little arrow */
+.vertical-timeline-element-content-arrow{ display: none !important; }
+
+/* ====================== */
+/* RESPONSIVE TWEAKS      */
+/* ====================== */
+@media (max-width: 1024px){
+  :root{ --section-gutter: 8%; --card-left-offset: 56px; }
+}
+@media (max-width: 768px){
+  :root{ --section-gutter: 5%; --card-left-offset: 48px; }
+}
+@media (max-width: 560px){
+  :root{ --section-gutter: 4%; --card-left-offset: 40px; }
+}
+@media (max-width: 420px){
+  :root{ --section-gutter: 4%; --card-left-offset: 28px; --line-offset: 14px; }
 }

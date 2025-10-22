@@ -1,20 +1,85 @@
 .about-section {
   display: flex;
-  gap: 30px;
-  justify-content: flex-start;
+  gap: 50px;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0px 15%;
-  min-height: 700px;
-
-  /* Vertical gradient: blue (top) → purple (bottom) */
-  background: linear-gradient(to bottom, #A8D8FF 0%, #CBA7FF 100%);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  padding: 80px 10%;
+  min-height: 600px;
+  background-color: #FFFFFF;
 }
 
+/* LEFT SIDE: Name and Picture */
+.about-section .left-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .image-wrapper {
+    margin-bottom: 20px;
+    
+    img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #0d1116;
+  }
+
+  .title {
+    font-size: 1.3em;
+    color: #C4A747;
+    margin: 5px 0 20px 0;
+  }
+
+  .social_icons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    
+    svg {
+      font-size: 1.8em;
+      color: #0d1116;
+      transition: color 0.3s;
+      
+      &:hover {
+        color: #5000ca;
+      }
+    }
+  }
+}
+
+/* RIGHT SIDE: Introduction */
+.about-section .right-side {
+  flex: 1.5;
+  text-align: left;
+
+  h2 {
+    font-size: 2.5em;
+    color: #0d1116;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #C4A747;
+    padding-bottom: 10px;
+  }
+
+  p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+  }
+}
+
+/* Old content class - keeping for backwards compatibility */
 .about-section .content {
   text-align: left;
   z-index: 2;
@@ -23,7 +88,6 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
-    color: white;
 
     svg { font-size: 1.8em; }
   }
@@ -76,7 +140,6 @@
       padding: 10px 15px;
       list-style: none;
       font-size: 13px;
-      color: white;
       width: 10%;
     }
 
@@ -93,28 +156,42 @@
       padding-right: 5%;
       font-size: 12px;
     }
+
+    .about-section .left-side h1 {
+      font-size: 1.8em;
+    }
+
+    .about-section .right-side h2 {
+      font-size: 1.8em;
+    }
   }
 
   @media (max-width: 768px) {
-    .about-section h1 { font-size: 4em !important; text-align: left; }
-    .about-section p { text-align: left; }
-    .container { display: initial; }
-    .social_icons { display: none !important; }
-
-    .mobile_social_icons {
-      padding-top: 10px;
-      display: flex !important;
-      flex-direction: row;
-      gap: 10px;
-      color: white;
-      svg { font-size: 1.8em; }
+    .about-section {
+      flex-direction: column;
+      padding: 50px 5%;
     }
 
-    .about-section {
-      padding-top: 150px;
-      display: block;
-      padding-left: 0;
-      padding-right: 0;
+    .about-section .left-side {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+
+    .about-section .right-side {
+      width: 100%;
+    }
+
+    .about-section h1 { 
+      font-size: 2em !important; 
+      text-align: center; 
+    }
+    
+    .about-section p { 
+      text-align: left; 
+    }
+    
+    .container { 
+      display: initial; 
     }
 
     .about-section .content {
@@ -122,11 +199,6 @@
       padding-left: 5%;
       padding-right: 5%;
       padding-bottom: 5%;
-    }
-
-    .about-section .image-wrapper {
-      padding-left: 5%;
-      width: 100%;
     }
   }
 }
